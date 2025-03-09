@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATINUM GREENS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 20;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: none;
+            text-align: center;
+        }
+
+        .slide img {
+            width: 65%;
+            height: 65%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 16px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+<h1 align="center">PLATINUM GREENS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CONTACT US: 7767933864 </H1></H1>
+<H2 ALIGN="CENTER">WELL DEVELOPED JDA TOWNSHIP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOKESHYADAV05299@GMAIL.COM</H2>
+
+
+<div class="slideshow-container">
+
+    <!-- Slide 1 -->
+    <div class="slide">
+ <a href="#" target="_blank">
+            <img src="66.jpg" alt="Slide 1"></a>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+        <a href="#" target="_blank">
+            <img src="64.jpg"alt="Slide 2">
+        </a>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="62.jpg" alt="Slide 3">
+        </a>
+    </div>
+
+<!-- Slide 4 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="65.jpg" alt="Slide 4">
+        </a>
+    </div>
+
+<!-- Slide 5 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="63.jpg" alt="Slide 5">
+        </a>
+    </div>
+<!-- Slide 6 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="66.jpg" alt="Slide 6">
+        </a>
+    </div>
+<!-- Slide 7 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="68.jpg" alt="Slide 7">
+        </a>
+    </div>
+<!-- Slide 8 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="69.jpg" alt="Slide 7">
+        </a>
+    </div>
+<!-- Slide 9 -->
+    <div class="slide">
+        <a href="https://www.example.com" target="_blank">
+            <img src="70.jpg" alt="Slide 8">
+        </a>
+    </div>
+
+
+
+
+
+
+</div>
+
+<!-- Navigation buttons -->
+<a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+<a class="next" onclick="moveSlide(1)">&#10095;</a>
+
+<H3 ALIGN="CENTER">LOCATION = TOWNSHIP AT NH8 NEAR BY AJMER </H3>
+<H4 ALIGN="CENTER">PRICE = 15000/ YARD </H4>
+<H5 ALIGN="CENTER"> PLOT SIZE = STARTING FROM 111 YARD</H5>
+<H5> FACILITIES = * BOOM BARRIER , *LANDSCAPED PARK , *UNDERGROUND WATER PIPE LINE , *OUTER BOUNDARY ,*BOREWELL  *UNDERGROUND ELECTRIFICATION , ECO-FRIENDLY TOWNSHIP , UNDERGROUND SEWAGE LINE , GUARD HOUSE , PATHWAY , PLOT DEMARCATION </H5>
+
+
+<script>
+    let slideIndex = 0;
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        // Display the current slide
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 500000); // Change slide every 3 seconds
+    }
+
+    function moveSlide(n) {
+        slideIndex += n;
+        let slides = document.getElementsByClassName("slide");
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        } else if (slideIndex < 1) {
+            slideIndex = slides.length;
+        }
+        showSlides();
+    }
+
+    showSlides(); // Initialize the slide show
+</script>
+
+</body>
+</html>
